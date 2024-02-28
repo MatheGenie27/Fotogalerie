@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  background-color: gray;
+}
+
+#mainheader {
+  height: 50px;
+  width: 100%;
+  background-color: gray;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#impressumIcon {
+  height: 26px;
+  width: 26px;
+  margin-right: 56px;
+  background-color: grey;
+}
+
+#logo {
+  height: 38px;
+  width: 38px;
+  background-color: lightgrey;
+  margin-left: 56px;
+
+  padding: 0px;
+  border-radius: 20%;
+}
+
+#impressumBack {
+  height: 26px;
+  width: 26px;
+  margin-right: 56px;
+  background-color: grey;
+}
+
+#impressumContent {
+  margin-left: 28px;
+}
+
+#imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+  gap: 1px;
+}
+
+.imgBox {
+  height: 150px;
+
+  margin: 5px;
+}
+
+.imgBox img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.imgBox:hover {
+  transition: 100ms;
+  height: 146px;
+
+  padding: 2px;
+  background-color: antiquewhite;
+}
+
+.imgBox img:hover {
+  cursor: pointer;
+  filter: grayscale(80%);
+}
+
+.imgBox:active {
+  height: 142px;
+  padding: 4px;
+  background-color: lightblue;
+}
+
+.noDisplay {
+  display: none !important;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  background-color: black;
+
+  z-index: 998;
+}
+
+#left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#closePopupIcon {
+  height: 30px;
+  width: 30px;
+  background-color: lightgrey;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+#closePopupIcon:hover {
+  cursor: pointer;
+}
+
+#closePopupIcon:active {
+  
+  background-color: lightblue;
+}
+
+.animationEinblenden {
+  animation: einblenden 0.5s;
+}
+
+.animationAusblenden {
+  animation: ausblenden 0.8s;
+}
+
+@keyframes einblenden {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ausblenden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#turnImgLeftIcon {
+  height: 30px;
+  width: 30px;
+
+  margin-right: 10px;
+  margin-left: 10px;
+
+  background-color: grey;
+  padding: 2px;
+  border-radius: 100%;
+}
+#turnImgLeftIcon:hover {
+  cursor: pointer;
+}
+
+#turnImgLeftIcon:active {
+  
+  background-color: lightblue;
+}
+
+#turnImgRightIcon {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+#turnImgRightIcon:hover {
+  cursor: pointer;
+}
+
+#turnImgRightIcon:active {
+  
+  background-color: lightblue;
+}
+
+#middle {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgBig {
+  height: 100%;
+  max-width: 100%;
+  object-fit: scale-down;
+}
+
+#right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 125px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Farbe des Scrollbar-Griffs */
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey; /* Beispiel-Farbe: Blau */
+}
+
+/* Farbe des Scrollbar-Griffs bei Hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(
+    188,
+    188,
+    188
+  ); /* Beispiel-Farbe: Dunkleres Blau bei Hover */
+}
+
+/* Farbe des Scrollbar-Tracks bei Hover */
+::-webkit-scrollbar-track:hover {
+  background-color: gray; /* Beispiel-Farbe: Grau bei Hover */
+}
+
+/* Breite des Scrollbar-Griffs bei Hover */
+::-webkit-scrollbar-thumb:active {
+  width: 20px; /* Beispiel: Breite beim Klicken vergrößern */
+}
+
+/* Farbe des Scrollbar-Griffs beim Klicken */
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(100, 100, 100); /* Beispiel-Farbe: Blau beim Klicken */
+}
+
+/* Farbe des Scrollbar-Tracks */
+::-webkit-scrollbar-track {
+  background-color: gray; /* Beispiel-Farbe: Grau */
+}

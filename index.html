@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotogalerie</title>
+
+    <!-- FavIcon einbiden-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./ressources/icons/picture.svg"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body onload="load()">
+    <div id="mainheader">
+      <a href="./index.html"
+        ><img id="logo" src="./ressources/icons/picture.svg"
+      /></a>
+      <a href="./impressum.html"
+        ><img id="impressumIcon" src="./ressources/icons/info.svg"
+      /></a>
+    </div>
+
+    <main>
+      <div id="imgContainer"></div>
+
+      <div id="popup" class="noDisplay">
+        <header>
+          <img
+            id="closePopupIcon"
+            onclick="closeImage()"
+            src="./ressources/icons/cross-circle(1).svg"
+          />
+        </header>
+
+        <div id="left">
+          <img
+            id="turnImgLeftIcon"
+            onclick="previousImage()"
+            src="./ressources/icons/arrow-alt-circle-left.svg"
+          />
+        </div>
+
+        <div id="middle"></div>
+
+        <div id="right">
+          <img
+            id="turnImgRightIcon"
+            onclick="nextImage()"
+            src="./ressources/icons/arrow-alt-circle-right.svg"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
